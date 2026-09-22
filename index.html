@@ -72,32 +72,31 @@
     text-align: center;
     margin-bottom: 72px;
   }
+.avatar {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  overflow: hidden;
 
-  .avatar {
-    width: 84px;
-    height: 84px;
-    margin: 0 auto 22px;
-    border-radius: 50%;
+  border: 1px solid var(--line);
 
-    background:
-      linear-gradient(
-        150deg,
-        var(--crimson) 0%,
-        var(--ink-2) 55%,
-        var(--teal) 100%
-      );
+  display: block;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.avatar img {
+  display: block;
+  width: 84px;
+  height: 84px;
 
-    font-family: 'Fraunces', serif;
-    font-size: 32px;
-    font-weight: 500;
+  max-width: 84px;
+  max-height: 84px;
 
-    color: var(--paper);
-    border: 1px solid var(--line);
-  }
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+}
 
   .name {
     font-family: 'Fraunces', serif;
@@ -500,14 +499,32 @@
       padding: 36px 8px 56px;
     }
 
-    .avatar {
-      width: 68px;
-      height: 68px;
+    
+.avatar {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
 
-      font-size: 26px;
+  overflow: hidden;
 
-      margin-bottom: 16px;
-    }
+  border: 1px solid var(--line);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+
 
     .name {
       font-size: 23px;
@@ -575,9 +592,14 @@
 
   <div class="identity">
 
-    <div class="avatar">
-      F
-    </div>
+    
+<div class="avatar">
+  <img
+    src="PFP.jpeg"
+    alt="Fernando"
+  >
+</div>
+
 
     <h1 class="name">
       ferrmartins19's shelf
@@ -1098,7 +1120,7 @@
        ======================================================== -->
 
   <footer>
-    four fixed · three in motion
+     · 
   </footer>
 
 </body>
